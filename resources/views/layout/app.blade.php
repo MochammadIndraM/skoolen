@@ -24,11 +24,11 @@
     @endif --}}
 <body class="bg-[#FFFF80]">
 
-    <header class="bg-[#FFAA80] h-[96px] w-full flex flex-row items-center justify-between fixed z-50">
-            <a href="/" class="text-[35px] text-[#FFFF80] pl-[3rem]">SKOOLEN</a>
-            <div>
-                <a href="#" class="text-[35px] text-[#FFFF80] pr-[3rem]">Belajar</a>
-                <a href="#" class="text-[35px] text-[#FFFF80] pr-[3rem]">Login</a>
+    <header class="bg-[#FFAA80] h-[96px] w-full flex flex-row items-center justify-between fixed z-50 ">
+            <a href="/" class="text-[35px] text-[#FFFF80] pl-[2rem]">SKOOLEN</a>
+            <div class="">
+                <a href="#" class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[1rem] md:pr-[1.5rem] lg:pr-[2rem]">Belajar</a>
+                <a href="#" class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[2rem]">Login</a>
             </div>
     </header>
     <main>

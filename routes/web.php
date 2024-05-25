@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/belajar-angka', [CountMenusController::class, 'index'])->name('countingFeatures.CountMenus');
+Route::get('/belajar-angka/learn-number', [LearnNumberController::class, 'index'])->name('countingFeatures.LearnNumber');

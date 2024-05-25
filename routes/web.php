@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\countingFeatures\CountMenusController;
+use App\Http\Controllers\countingFeatures\LearnNumberController;
 
 Route::get('/', function () {
     return view('page.landing-page');

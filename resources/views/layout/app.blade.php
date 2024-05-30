@@ -17,12 +17,7 @@
 </head>
 
 {{-- Background Warna --}}
-    {{-- @if ({{ route('routeName', ['id'=>1]) }})
-
-    @else
-
-    @endif --}}
-<body class="bg-[#FFFF80]">
+<body class="{{ request()->is('sains*') ? 'bg-[#C3FF93]' : 'bg-[#FFFF80]' }}">
     <header class="bg-[#FFAA80] h-[96px] w-full flex flex-row items-center justify-between top-0 fixed ">
             <a href="/" class="text-[35px] text-[#FFFF80] pl-[2rem]">SKOOLEN</a>
             <div class="">

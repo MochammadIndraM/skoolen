@@ -1,6 +1,11 @@
 @extends('layout.app')
 
 @section('content')
+    <div class="title flex justify-center ">
+        <h2 class="text-2xl mt-10 text-justify border-b-4 border-red-300 pb-1 px-4 rounded-md">Mari Kita Belajar
+            Membaca
+        </h2>
+    </div>
     <div class="block sm:flex sm:flex-row-reverse sm:pt-[40px]">
         <section class="pt-[40px] pb-[20px] flex justify-center sm:pt-[0px] sm:items-center sm:w-[40%] lg:w-[30%]">
             <div class="bg-[#65B741] img-abjad p-[5px] w-1/2 sm:w-[70%] h-[230px] rounded-md lg:h-[300px]">

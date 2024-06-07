@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class HewanController extends Controller
+class KategoriHewanController extends Controller
 {
     public function index()
     {

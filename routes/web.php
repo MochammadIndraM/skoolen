@@ -4,9 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\countingFeatures\CountMenusController;
 use App\Http\Controllers\countingFeatures\LearnNumberController;
 use App\Http\Controllers\readingFeatures\LearnReadingController;
-
+use App\Http\Controllers\sainsFeatures\CuacaController;
+use App\Http\Controllers\sainsFeatures\HabitatController;
 use App\Http\Controllers\sainsFeatures\SainsMenuController;
 use App\Http\Controllers\sainsFeatures\HewanController;
+use App\Http\Controllers\sainsFeatures\LangitController;
 use App\Http\Controllers\sainsFeatures\LearnHabitatController;
 
 Route::get('/', function () {
@@ -20,4 +22,6 @@ Route::get('/belajar-membaca', [LearnReadingController::class, 'index'])->name('
 
 Route::get('/sains', [SainsMenuController::class, 'index'])->name('sainsFeatures.SainsMenu');
 Route::get('/hewan', [HewanController::class, 'index'])->name('sainsFeatures.Hewan');
-Route::get('/belajar-habitat', [LearnHabitatController::class, 'index'])->name('sainsFeatures.LearnHabitat');
+Route::get('/cuaca', [CuacaController::class, 'index'])->name('sainsFeatures.Cuaca');
+Route::get('/langit', [LangitController::class, 'index'])->name('sainsFeatures.Langit');
+Route::get('/habitat', [HabitatController::class, 'index'])->name('sainsFeatures.Habitat');

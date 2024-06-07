@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-8 py-8">
-                <a href="/belajar-angka"
+                <a href="/belajar-berhitung"
                     class="bg-[#FFAF61] w-full h-[300px] lg:h-[330px] rounded-3xl flex flex-col items-center pt-[42px] hover:bg-[#fcb875]">
                     <img src="/assets/icon/berhitung.png"
                         class="h-[120px] w-[120px] md:h-[140px] md:w-[140px] lg:h-[160px] lg:w-[160px] " alt="">

@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('abjad', function (Blueprint $table) {
             $table->id();
+            $table->string('huruf', 3);
+            $table->string('img_abjad', 100);
+            $table->string('img_des', 100);
+            $table->string('deskripsi', 20);
             $table->timestamps();
         });
     }

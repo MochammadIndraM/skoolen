@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('kategori_hewan', function (Blueprint $table) {
             $table->id();
+            $table->string('slug')->nullable()->unique();
             $table->enum('kategori_hewan', ['Mamalia', 'Ikan', 'Burung', 'Reptil', 'Amfibi']);
+            $table->string('gambar', 100);
             $table->timestamps();
         });
     }

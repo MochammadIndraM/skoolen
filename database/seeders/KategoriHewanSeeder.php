@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\KategoriHewan;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class KategoriHewanSeeder extends Seeder
@@ -15,26 +14,40 @@ class KategoriHewanSeeder extends Seeder
     {
         $data = [
             [
-                "kategori_hewan" => 'Amfibi'
+                "id" => 1,
+                "kategori_hewan" => 'Amfibi',
+                "slug" => "amfibi",
+                "gambar" => "amfibi.png"
             ],
             [
-                "kategori_hewan" => 'Ikan'
+                "id" => 2,
+                "kategori_hewan" => 'Ikan',
+                "slug" => "ikan",
+                "gambar" => "ikan.png"
             ],
             [
-                "kategori_hewan" => 'Burung'
+                "id" => 3,
+                "kategori_hewan" => 'Burung',
+                "slug" => "burung",
+                "gambar" => "burung.png",
             ],
             [
-                "kategori_hewan" => 'Reptil'
+                "id" => 4,
+                "kategori_hewan" => 'Reptil',
+                "slug" => "reptil",
+                "gambar" => "reptil.png",
             ],
             [
-                "kategori_hewan" => 'Mamalia'
+                "id" => 5,
+                "kategori_hewan" => 'Mamalia',
+                "slug" => "mamalia",
+                "gambar" => "mamalia.png"
             ]
         ];
 
-        foreach ($data as $key => $value) {
-            KategoriHewan::create([
-                'kategori_hewan' => $value['kategori_hewan']
-            ]);
-        };
+        foreach ($data as $value) {
+            KategoriHewan::create($value);
+        }
+
     }
-};
+}

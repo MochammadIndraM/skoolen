@@ -8,6 +8,7 @@ use App\Http\Controllers\sainsFeatures\CuacaController;
 use App\Http\Controllers\sainsFeatures\HabitatController;
 use App\Http\Controllers\sainsFeatures\SainsMenuController;
 use App\Http\Controllers\sainsFeatures\KategoriHewanController;
+use App\Http\Controllers\sainsFeatures\KategoriTumbuhanController;
 use App\Http\Controllers\sainsFeatures\LangitController;
 
 Route::get('/', function () {
@@ -23,6 +24,11 @@ Route::get('/sains', [SainsMenuController::class, 'index'])->name('sainsFeatures
 Route::get('/kategori-hewan', [KategoriHewanController::class, 'index'])->name('sainsFeatures.Hewan');
 Route::get('/list-hewan/{slug}', [KategoriHewanController::class, 'listHewan'])->name('sainsFeatures.listHewan');
 Route::get('/hewan/{nama_hewan}', [KategoriHewanController::class, 'detailHewan'])->name('sainsFeatures.detailHewan');
+
+Route::get('/kategori-tumbuhan', [KategoriTumbuhanController::class, 'index'])->name('sainsFeatures.Tumbuhan');
+Route::get('/list-tumbuan/{slug}', [KategoriTumbuhanController::class, 'listTumbuhan'])->name('sainsFeatures.listTumbuhan');
+Route::get('/tumbuhan/{nama_tumbuhan}', [KategoriTumbuhanController::class, 'detailTumbuhan'])->name('sainsFeatures.detailTumbuhan');
+
 
 Route::get('/cuaca', [CuacaController::class, 'index'])->name('sainsFeatures.Cuaca');
 Route::get('/langit', [LangitController::class, 'index'])->name('sainsFeatures.Langit');

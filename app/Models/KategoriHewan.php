@@ -12,6 +12,11 @@ class KategoriHewan extends Model
 
     protected $table = 'kategori_hewan';
 
+    // protected $fillable = [
+    //     'id',
+    //     'kategori_hewan',
+    // ];
+
     protected static function boot()
     {
         parent::boot();

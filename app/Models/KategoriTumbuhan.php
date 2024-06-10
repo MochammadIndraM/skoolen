@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+
 
 class KategoriTumbuhan extends Model
 {
@@ -11,8 +13,17 @@ class KategoriTumbuhan extends Model
 
     protected $table = 'kategori_tumbuhan';
 
-    protected $fillable = [
-        'id',
-        'kategori_tumbuhan',
-    ];
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::saving(function ($kategoriTumbuhan) {
+            $kategoriTumbuhan->slug = Str::slug($kategoriTumbuhan->kategori_tumbuhan);
+        });
+    }
+
+    public function tumbuhan()
+    {
+        return $this->hasMany(Tumbuhan::class, 'id_kategori_tumbuhan', 'id');
+    }
 }

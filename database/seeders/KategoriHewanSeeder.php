@@ -14,26 +14,31 @@ class KategoriHewanSeeder extends Seeder
     {
         $data = [
             [
+                "id" => 1,
                 "kategori_hewan" => 'Amfibi',
                 "slug" => "amfibi",
                 "gambar" => "amfibi.png"
             ],
             [
+                "id" => 2,
                 "kategori_hewan" => 'Ikan',
                 "slug" => "ikan",
                 "gambar" => "ikan.png"
             ],
             [
+                "id" => 3,
                 "kategori_hewan" => 'Burung',
                 "slug" => "burung",
                 "gambar" => "burung.png",
             ],
             [
+                "id" => 4,
                 "kategori_hewan" => 'Reptil',
                 "slug" => "reptil",
                 "gambar" => "reptil.png",
             ],
             [
+                "id" => 5,
                 "kategori_hewan" => 'Mamalia',
                 "slug" => "mamalia",
                 "gambar" => "mamalia.png"
@@ -43,5 +48,6 @@ class KategoriHewanSeeder extends Seeder
         foreach ($data as $value) {
             KategoriHewan::create($value);
         }
+
     }
 }

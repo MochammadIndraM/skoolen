@@ -13,7 +13,7 @@
                 </a>
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 px-8 py-8">
-                <a href="/"
+                <a href="/kategori-tumbuhan"
                     class="bg-[#03AED2] w-full h-[300px] lg:h-[330px] rounded-3xl flex flex-col items-center pt-[42px] hover:bg-[#4ccae3]">
                     <img src="/assets/icon/tumbuhan.png"
                         class="h-[120px] w-[120px] md:h-[140px] md:w-[140px] lg:h-[160px] lg:w-[160px] " alt="">

@@ -7,7 +7,6 @@
             <h2 class="text-2xl mt-10 text-justify border-b-4 border-red-300 pb-1 px-4 rounded-md">Mari Kita Belajar
                 Berhitung</h2>
         </div>
-
         <div class="list-menus mt-10 grid grid-flow-row justify-items-center md:grid-flow-col  md:gap-[20px]">
             <div class="learn-number bg-[#008DDA] my-[20px] rounded-lg w-[100%] sm:w-[65%] h-80 md:w-[90%] lg:w-[60%]">
                 <div class="m-3 rounded-lg">

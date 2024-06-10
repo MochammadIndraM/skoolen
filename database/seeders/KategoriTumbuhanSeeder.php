@@ -15,20 +15,27 @@ class KategoriTumbuhanSeeder extends Seeder
     {
         $data = [
             [
-                "kategori_tumbuhan" => 'Bunga'
+                "id" => 1,
+                "kategori_tumbuhan" => 'Bunga',
+                "slug" => "bunga",
+                "gambar" => "bunga.png"
             ],
             [
-                "kategori_tumbuhan" => 'Buah'
+                "id" => 2,
+                "kategori_tumbuhan" => 'Buah',
+                "slug" => "buah",
+                "gambar" => "buah.png"
             ],
             [
-                "kategori_tumbuhan" => 'Sayur'
-            ]
+                "id" => 3,
+                "kategori_tumbuhan" => 'Sayur',
+                "slug" => "sayur",
+                "gambar" => "sayur.png",
+            ],
         ];
 
-        foreach ($data as $key => $value) {
-            KategoriTumbuhan::create([
-                'kategori_tumbuhan' => $value['kategori_tumbuhan']
-            ]);
-        };
+        foreach ($data as $value) {
+            KategoriTumbuhan::create($value);
+        }
     }
 }

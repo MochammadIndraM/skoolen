@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Tumbuhan;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,8 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call(KategoriHewanSeeder::class);
-        // $this->call(KategoriTumbuhanSeeder::class);
+        $this->call(KategoriHewanSeeder::class);
+        $this->call(KategoriTumbuhanSeeder::class);
         $this->call(HewanSeeder::class);
+        $this->call(TumbuhanSeeder::class);
+        $this->call(AbjadSeeder::class);
     }
 }

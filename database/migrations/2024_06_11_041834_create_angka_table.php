@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('abjad', function (Blueprint $table) {
+        Schema::create('angka', function (Blueprint $table) {
             $table->id();
-            $table->string('huruf', 3);
-            $table->string('img_abjad', 50);
+            $table->integer('angka');
+            $table->string('deskripsi', 50);
+            $table->string('img_angka', 50);
             $table->string('img_des', 50);
-            $table->string('deskripsi', 20);
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('abjad');
+        Schema::dropIfExists('angka');
     }
 };

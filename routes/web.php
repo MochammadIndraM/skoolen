@@ -5,6 +5,7 @@ use App\Http\Controllers\countingFeatures\CountMenusController;
 use App\Http\Controllers\countingFeatures\LearnNumberController;
 use App\Http\Controllers\sainsFeatures\SainsMenuController;
 use App\Http\Controllers\sainsFeatures\HewanController;
+use App\Http\Controllers\countingFeatures\LearnClockController;
 
 
 Route::get('/', function () {
@@ -13,6 +14,7 @@ Route::get('/', function () {
 
 Route::get('/belajar-angka', [CountMenusController::class, 'index'])->name('countingFeatures.CountMenus');
 Route::get('/belajar-angka/learn-number', [LearnNumberController::class, 'index'])->name('countingFeatures.LearnNumber');
+Route::get('/belajar-angka/learn-clock', [LearnClockController::class, 'index'])->name('countingFeatures.LearnClock');
 
 Route::get('/sains', [SainsMenuController::class, 'index'])->name('sainsFeatures.SainsMenu');
 Route::get('/hewan', [HewanController::class, 'index'])->name('sainsFeatures.Hewan');

@@ -1,22 +1,26 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\loginRegisterFeatures\LoginController;
+
 use App\Http\Controllers\countingFeatures\CountMenusController;
 use App\Http\Controllers\countingFeatures\LearnNumberController;
 
 use App\Http\Controllers\readingFeatures\LearnReadingController;
 use App\Http\Controllers\readingFeatures\GaleryLearnReading;
 
-use App\Http\Controllers\sainsFeatures\CuacaController;
-use App\Http\Controllers\sainsFeatures\HabitatController;
 use App\Http\Controllers\sainsFeatures\SainsMenuController;
+use App\Http\Controllers\sainsFeatures\CuacaController;
 use App\Http\Controllers\sainsFeatures\KategoriHewanController;
 use App\Http\Controllers\sainsFeatures\KategoriTumbuhanController;
 use App\Http\Controllers\sainsFeatures\LangitController;
+use App\Http\Controllers\sainsFeatures\HabitatController;
 
 Route::get('/', function () {
     return view('page.landing-page');
 });
+
+Route::get('/login', [LoginController::class, 'index'])->name('loginFeatures.Login');
 
 Route::get('/belajar-berhitung', [CountMenusController::class, 'index'])->name('countingFeatures.CountMenus');
 Route::get('/belajar-berhitung/angka', [LearnNumberController::class, 'index'])->name('countingFeatures.LearnNumber');

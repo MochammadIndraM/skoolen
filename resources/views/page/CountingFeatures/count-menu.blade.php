@@ -26,12 +26,14 @@
                 <div class="m-3 rounded-lg">
                     <img src="{{ asset('assets/img/counting-features/background_waktu.jpg') }}" alt=""
                         class="h-48 w-full">
-                    <figcaption class="text-center text-lg tracking-wider pt-2">BELAJAR ANGKA</figcaption>
+                    <figcaption class="text-center text-lg tracking-wider pt-2">BELAJAR JAM</figcaption>
                 </div>
                 <div class="flex justify-center">
+                    <a href="/belajar-angka/learn-clock">
                     <button class="px-5 pt-2 pb-2 bg-red-300 rounded-lg text-xl">
                         masuk
                     </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ class CuacaController extends Controller
 
     public function listCuaca($slug)
     {
-        $hewan = Cuaca::where('slug', $slug)->with('cuaca')->firstOrFail();
+        $cuaca = Cuaca::where('slug', $slug)->with('cuaca')->firstOrFail();
         return view('page.SainsFeatures.Cuaca.cuaca', compact('cuaca'));
     }
 

@@ -20,7 +20,12 @@ class DatabaseSeeder extends Seeder
         $this->call(HewanSeeder::class);
         $this->call(TumbuhanSeeder::class);
         $this->call(AbjadSeeder::class);
-        $this->call(AngkaSeeder::class);
+<<<<<<<<< Temporary merge branch 1
         $this->call(CuacaSeeder::class);
+        $this->call(LangitSeeder::class);
+        $this->call(AngkaSeeder::class);
+=========
+
+>>>>>>>>> Temporary merge branch 2
     }
 }

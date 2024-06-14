@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('langit', function (Blueprint $table) {
             $table->id();
+            $table->string('slug')->nullable()->unique();
+            $table->enum('list_langit', ['Bumi', 'Saturnus', 'Meteor', 'Roket', 'Astronaut', 'Matahari', 'Bintang', 'Bulan', 'Satelit']);
+            $table->string('icon', 100);
+            $table->text('deskripsi',500);
+            $table->string('video_id', 100);
             $table->timestamps();
         });
     }

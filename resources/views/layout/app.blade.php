@@ -30,11 +30,21 @@
     <header
         class="{{ request()->is('login') ? 'hidden' : 'flex' }} bg-[#FFAA80] z-[10] h-[96px] w-full flex-row items-center justify-between top-0 fixed ">
         <a href="/" class="text-[35px] text-[#FFFF80] pl-[2rem]">SKOOLEN</a>
-        <div class="">
-            <a href="/"
-                class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[1rem] md:pr-[1.5rem] lg:pr-[2rem]">Belajar</a>
-            <a href="{{ route('loginFeatures.Login') }}"
-                class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[2rem]">Login</a>
+        <div class="@auth flex flex-row @endauth">
+            @auth
+                <a href="{{ route('Admin.Dashboard') }}"
+                    class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[1rem] md:pr-[1.5rem] lg:pr-[2rem]">Dashboard</a>
+                <form action="{{ route('loginFeatures.Logout.post') }}" method="POST"
+                    class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[2rem]">
+                    @csrf
+                    <button type="submit" class="text-red">logout</button>
+                </form>
+            @else
+                <a href="/"
+                    class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[1rem] md:pr-[1.5rem] lg:pr-[2rem]">Belajar</a>
+                <a href="{{ route('login') }}"
+                    class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[2rem]">Login</a>
+            @endauth
         </div>
     </header>
     <main class="{{ request()->is('login') ? 'mt-0' : 'mt-20' }}">

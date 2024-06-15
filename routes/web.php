@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginRegisterFeatures\LoginController;
+use App\Http\Controllers\Admin\DashboardController;
 
 use App\Http\Controllers\countingFeatures\CountMenusController;
 use App\Http\Controllers\countingFeatures\LearnNumberController;
@@ -16,12 +17,23 @@ use App\Http\Controllers\sainsFeatures\KategoriTumbuhanController;
 use App\Http\Controllers\sainsFeatures\LangitController;
 use App\Http\Controllers\sainsFeatures\HabitatController;
 
+use App\Http\Middleware\AdminMiddleware;
+
 Route::get('/', function () {
     return view('page.landing-page');
 });
 
-Route::get('/login', [LoginController::class, 'index'])->name('loginFeatures.Login');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate'])->name('loginFeatures.Login.post');
+Route::post('/logout', [LoginController::class, 'logout'])->name('loginFeatures.Logout.post');
 
+// halaman admin
+Route::middleware([AdminMiddleware::class])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('Admin.Dashboard');
+});
+
+
+// halaman all role
 Route::get('/belajar-berhitung', [CountMenusController::class, 'index'])->name('countingFeatures.CountMenus');
 Route::get('/belajar-berhitung/angka', [LearnNumberController::class, 'index'])->name('countingFeatures.LearnNumber');
 

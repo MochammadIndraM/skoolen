@@ -1,8 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\AdminMiddleware;
 use App\Http\Controllers\loginRegisterFeatures\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\FiturCuacaController;
+use App\Http\Controllers\Admin\FiturHewanController;
+use App\Http\Controllers\Admin\FiturLangitController;
+use App\Http\Controllers\Admin\FiturTumbuhanController;
+
 
 use App\Http\Controllers\countingFeatures\CountMenusController;
 use App\Http\Controllers\countingFeatures\LearnNumberController;
@@ -17,7 +23,6 @@ use App\Http\Controllers\sainsFeatures\KategoriTumbuhanController;
 use App\Http\Controllers\sainsFeatures\LangitController;
 use App\Http\Controllers\sainsFeatures\HabitatController;
 
-use App\Http\Middleware\AdminMiddleware;
 
 Route::get('/', function () {
     return view('page.landing-page');
@@ -30,6 +35,10 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('loginFeatures.
 // halaman admin
 Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('Admin.Dashboard');
+    Route::get('/fitur-cuaca', [FiturCuacaController::class, 'index'])->name('Admin.fitur-cuaca');
+    Route::get('/fitur-hewan', [FiturHewanController::class, 'index'])->name('Admin.fitur-hewan');
+    Route::get('/fitur-langit', [FiturLangitController::class, 'index'])->name('Admin.fitur-langit');
+    Route::get('/fitur-tumbuhan', [FiturTumbuhanController::class, 'index'])->name('Admin.fitur-tumbuhan');
 });
 
 

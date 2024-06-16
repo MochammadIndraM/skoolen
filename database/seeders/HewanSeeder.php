@@ -15,123 +15,33 @@ class HewanSeeder extends Seeder
     {
         $data = [
             [
-                "id_kategori_hewan" => '4',
-                "nama_hewan" => 'Kucing',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
+                "id_kategori_hewan" => '1',
+                "nama_hewan" => 'Katak',
+                "deskripsi" => 'Katak adalah amfibi yang paling populer di dunia.',
                 "gambar" => 'kucing.jpg'
             ],
             [
                 "id_kategori_hewan" => '2',
-                "nama_hewan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '1',
-                "nama_hewan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
+                "nama_hewan" => 'Ikan cupang',
+                "deskripsi" => 'Ikan cupang adalah cupang yang paling populer di dunia.',
                 "gambar" => 'kucing.jpg'
             ],
             [
                 "id_kategori_hewan" => '3',
-                "nama_hewan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '5',
-                "nama_hewan" => 'Badak',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
+                "nama_hewan" => 'Burung Kenari',
+                "deskripsi" => 'Burung Kenari adalah burung yang paling populer di dunia.',
                 "gambar" => 'kucing.jpg'
             ],
             [
                 "id_kategori_hewan" => '4',
-                "nama_hewan" => 'Kucing',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '2',
-                "nama_hewan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '1',
-                "nama_hewan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '3',
-                "nama_hewan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
+                "nama_hewan" => 'Ular',
+                "deskripsi" => 'Ular adalah reptil yang paling populer di dunia.',
                 "gambar" => 'kucing.jpg'
             ],
             [
                 "id_kategori_hewan" => '5',
-                "nama_hewan" => 'Badak',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '4',
-                "nama_hewan" => 'Kucing',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '2',
-                "nama_hewan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '1',
-                "nama_hewan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '3',
-                "nama_hewan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '5',
-                "nama_hewan" => 'Badak',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '4',
-                "nama_hewan" => 'Kucing',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '2',
-                "nama_hewan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '1',
-                "nama_hewan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '3',
-                "nama_hewan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_hewan" => '5',
-                "nama_hewan" => 'Badak',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
+                "nama_hewan" => 'Orang utan',
+                "deskripsi" => 'Orang Utan adalah mamalia yang paling populer di dunia.',
                 "gambar" => 'kucing.jpg'
             ],
         ];

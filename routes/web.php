@@ -36,7 +36,13 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('loginFeatures.
 Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('Admin.Dashboard');
     Route::get('/fitur-cuaca', [FiturCuacaController::class, 'index'])->name('Admin.fitur-cuaca');
+
     Route::get('/fitur-hewan', [FiturHewanController::class, 'index'])->name('Admin.fitur-hewan');
+    Route::post('/fitur-hewan/add', [FiturHewanController::class, 'store'])->name('Admin.fitur-hewan.store');
+    Route::get('/fitur-hewan/{id}/hewan', [FiturHewanController::class, 'byId'])->name('Admin.fitur-hewan.byId');
+    Route::post('/fitur-hewan/update/{id}', [FiturHewanController::class, 'update'])->name('Admin.fitur-hewan.update');
+    Route::delete('/fitur-hewan/destroy/{id}', [FiturHewanController::class, 'destroy'])->name('Admin.fitur-hewan.destroy');
+
     Route::get('/fitur-langit', [FiturLangitController::class, 'index'])->name('Admin.fitur-langit');
     Route::get('/fitur-tumbuhan', [FiturTumbuhanController::class, 'index'])->name('Admin.fitur-tumbuhan');
 });

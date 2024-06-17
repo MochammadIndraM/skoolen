@@ -35,8 +35,7 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('loginFeatures.
 // halaman admin
 Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('Admin.Dashboard');
-    Route::get('/fitur-cuaca', [FiturCuacaController::class, 'index'])->name('Admin.fitur-cuaca');
-
+    
     Route::get('/fitur-hewan', [FiturHewanController::class, 'index'])->name('Admin.fitur-hewan');
     Route::post('/fitur-hewan/add', [FiturHewanController::class, 'store'])->name('Admin.fitur-hewan.store');
     Route::get('/fitur-hewan/{id}/hewan', [FiturHewanController::class, 'byId'])->name('Admin.fitur-hewan.byId');
@@ -48,6 +47,12 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/fitur-tumbuhan/{id}/tumbuhan', [FiturTumbuhanController::class, 'byId'])->name('Admin.fitur-tumbuhan.byId');
     Route::post('/fitur-tumbuhan/update/{id}', [FiturTumbuhanController::class, 'update'])->name('Admin.fitur-tumbuhan.update');
     Route::delete('/fitur-tumbuhan/destroy/{id}', [FiturTumbuhanController::class, 'destroy'])->name('Admin.fitur-tumbuhan.destroy');
+    
+    Route::get('/fitur-cuaca', [FiturCuacaController::class, 'index'])->name('Admin.fitur-cuaca');
+    Route::post('/fitur-cuaca/add', [FiturCuacaController::class, 'store'])->name('Admin.fitur-cuaca.store');
+    Route::get('/fitur-cuaca/{id}/cuaca', [FiturCuacaController::class, 'byId'])->name('Admin.fitur-cuaca.byId');
+    Route::post('/fitur-cuaca/update/{id}', [FiturCuacaController::class, 'update'])->name('Admin.fitur-cuaca.update');
+    Route::delete('/fitur-cuaca/destroy/{id}', [FiturCuacaController::class, 'destroy'])->name('Admin.fitur-cuaca.destroy');
 
     Route::get('/fitur-langit', [FiturLangitController::class, 'index'])->name('Admin.fitur-langit');
 });

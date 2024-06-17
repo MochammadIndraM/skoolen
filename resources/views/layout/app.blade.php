@@ -50,7 +50,24 @@
     <main class="{{ request()->is('login') ? 'mt-0' : 'mt-20' }}">
         @yield('content')
     </main>
-    <footer>
+    <footer class="bg-[#FFAA80] text-[#FFFF80] py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold">SKOOLEN</h3>
+                <p class="mt-2">Membantu belajar dengan cara yang menyenangkan.</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-semibold">Navigasi</h4>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/tentang-kami" class="hover:underline">Tentang Kami</a></li>
+                    <li><a href="/contact" class="hover:underline">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto mt-8 text-center border-t border-[#FFFF80] pt-4">
+            <p>&copy; 2024 SKOOLEN. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 

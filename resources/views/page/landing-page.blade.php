@@ -5,7 +5,7 @@
         <img src="/assets/img/HERO.png" alt="Hero" class="w-full h-auto">
     </div>
 
-    <div class="flex justify-center items-center pt-[36px] flex-col">
+    <div class="flex justify-center items-center pt-[36px] flex-col mb-12">
         <p class="text-[#FF5580] text-[40px] flex justify-center pb-[30px]">Mari Belajar</p>
         <div class="flex flex-row flex-wrap justify-center items-center">
             <div class="w-full md:w-1/2 lg:w-1/3 px-8 py-8">

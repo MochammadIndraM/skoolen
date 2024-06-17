@@ -69,3 +69,8 @@ Route::get('/cuaca/{slug}', [CuacaController::class, 'show'])->name('cuaca.show'
 
 Route::get('/langit', [LangitController::class, 'index'])->name('langit.index');
 Route::get('/langit/{slug}', [LangitController::class, 'show'])->name('langit.show');
+
+
+Route::get('/tentang-kami', function () {
+    return view('page.aboutUs');
+});

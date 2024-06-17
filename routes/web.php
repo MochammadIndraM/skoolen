@@ -42,9 +42,14 @@ Route::middleware([AdminMiddleware::class])->group(function () {
     Route::get('/fitur-hewan/{id}/hewan', [FiturHewanController::class, 'byId'])->name('Admin.fitur-hewan.byId');
     Route::post('/fitur-hewan/update/{id}', [FiturHewanController::class, 'update'])->name('Admin.fitur-hewan.update');
     Route::delete('/fitur-hewan/destroy/{id}', [FiturHewanController::class, 'destroy'])->name('Admin.fitur-hewan.destroy');
+    
+    Route::get('/fitur-tumbuhan', [FiturTumbuhanController::class, 'index'])->name('Admin.fitur-tumbuhan');
+    Route::post('/fitur-tumbuhan/add', [FiturTumbuhanController::class, 'store'])->name('Admin.fitur-tumbuhan.store');
+    Route::get('/fitur-tumbuhan/{id}/tumbuhan', [FiturTumbuhanController::class, 'byId'])->name('Admin.fitur-tumbuhan.byId');
+    Route::post('/fitur-tumbuhan/update/{id}', [FiturTumbuhanController::class, 'update'])->name('Admin.fitur-tumbuhan.update');
+    Route::delete('/fitur-tumbuhan/destroy/{id}', [FiturTumbuhanController::class, 'destroy'])->name('Admin.fitur-tumbuhan.destroy');
 
     Route::get('/fitur-langit', [FiturLangitController::class, 'index'])->name('Admin.fitur-langit');
-    Route::get('/fitur-tumbuhan', [FiturTumbuhanController::class, 'index'])->name('Admin.fitur-tumbuhan');
 });
 
 

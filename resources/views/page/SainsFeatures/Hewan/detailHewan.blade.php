@@ -6,8 +6,13 @@
         <div class="w-full max-w-[800px] px-8 py-8">
             <div class="bg-[#FF5580] w-full rounded-3xl flex flex-col items-center">
                 <div class="w-full overflow-hidden rounded-t-3xl">
-                    <img src="/assets/img/sains/hewan/{{ $hewan->gambar }}"
-                        class="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover" alt="{{ $hewan->nama_hewan }}">
+                    @if (file_exists(public_path('assets/img/sains/hewan/' . $hewan->gambar)))
+                        <img class="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+                            src="{{ asset('assets/img/sains/hewan/' . $hewan->gambar) }}" alt="{{ $hewan->gambar }}">
+                    @else
+                        <img class="w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover"
+                            src="{{ asset('/storage/' . $hewan->gambar) }}" alt="">
+                    @endif
                 </div>
                 <div class="p-8">
                     <p class="text-[#FFFF80] text-[24px] md:text-[34px] lg:text-[44px]">{{ $hewan->nama_hewan }}</p>

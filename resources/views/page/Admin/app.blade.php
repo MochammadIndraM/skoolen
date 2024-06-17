@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 
+    {{-- datatables css --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -84,7 +86,7 @@
     <main class="mt-20 w-[calc(100%-3.73rem)] ml-auto">
         <div class="2xl:container mx-auto space-y-6">
             <header
-                class="border-b  border-gray-300/40 bg-[#FFAA80] h-16 w-full flex flex-row items-center justify-between top-0 fixed ">
+                class="border-b  border-gray-300/40 bg-[#FFAA80] h-16 w-full flex flex-row items-center justify-between z-[5] top-0 fixed ">
                 <a href="#" class="text-[25px] text-[#FFFF80] pl-[2rem]">SKOOLEN</a>
                 <div class="flex flex-row mr-10 2xl:mr-32">
                     <form action="{{ route('loginFeatures.Logout.post') }}" method="POST"
@@ -99,6 +101,9 @@
             </div>
         </div>
     </main>
+    {{-- datatable --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 </body>
 
 </html>

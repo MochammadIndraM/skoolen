@@ -15,78 +15,22 @@ class TumbuhanSeeder extends Seeder
     {
         $data = [
             [
-                "id_kategori_tumbuhan" => '2',
-                "nama_tumbuhan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
                 "id_kategori_tumbuhan" => '1',
-                "nama_tumbuhan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '3',
-                "nama_tumbuhan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-
-            [
-                "id_kategori_tumbuhan" => '2',
-                "nama_tumbuhan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '1',
-                "nama_tumbuhan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '3',
-                "nama_tumbuhan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-
-            [
-                "id_kategori_tumbuhan" => '2',
-                "nama_tumbuhan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '1',
-                "nama_tumbuhan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '3',
-                "nama_tumbuhan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
+                "nama_tumbuhan" => 'Bunga Mawar',
+                "deskripsi" => 'Bunga Mawar',
+                "gambar" => 'mawar.jpg'
             ],
             [
                 "id_kategori_tumbuhan" => '2',
-                "nama_tumbuhan" => 'Nyambek',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
-            ],
-            [
-                "id_kategori_tumbuhan" => '1',
-                "nama_tumbuhan" => 'Rusa',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
+                "nama_tumbuhan" => 'Buah Apel',
+                "deskripsi" => 'Apel',
+                "gambar" => 'mawar.jpg'
             ],
             [
                 "id_kategori_tumbuhan" => '3',
-                "nama_tumbuhan" => 'Ayam',
-                "deskripsi" => 'Kucing adalah mamalia yang paling populer di dunia.',
-                "gambar" => 'kucing.jpg'
+                "nama_tumbuhan" => 'Tomat',
+                "deskripsi" => 'Tomat',
+                "gambar" => 'mawar.jpg'
             ],
         ];
 

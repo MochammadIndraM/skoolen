@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cuaca', function (Blueprint $table) {
             $table->id();
             $table->string('slug')->nullable()->unique();
-            $table->enum('list_cuaca', ['Pelangi', 'Hujan', 'Petir', 'Cerah', 'Dingin', 'Panas', 'Mendung', 'Berangin']);
+            $table->string('nama_cuaca', 100);
             $table->string('icon', 100);
             $table->text('deskripsi',500);
             $table->string('video_id', 100);

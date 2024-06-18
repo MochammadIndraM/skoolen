@@ -46,4 +46,5 @@ Route::get('/habitat', [HabitatController::class, 'index'])->name('sainsFeatures
 Route::get('/cuaca', [CuacaController::class, 'index'])->name('cuaca.index');
 Route::get('/cuaca/{slug}', [CuacaController::class, 'show'])->name('cuaca.show');
 
-Route::get('/langit', [LangitController::class, 'index'])->name('sainsFeatures.Langit');
+Route::get('/langit', [LangitController::class, 'index'])->name('langit.index');
+Route::get('/langit/{slug}', [LangitController::class, 'show'])->name('langit.show');

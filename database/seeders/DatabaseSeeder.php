@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call(AbjadSeeder::class);
         $this->call(AngkaSeeder::class);
         $this->call(CuacaSeeder::class);
+        $this->call(LangitSeeder::class);
     }
 }

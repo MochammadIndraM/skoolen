@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="w-full md:w-1/2 px-8 py-8">
-                <a href="/"
+                <a href="/learn-listening"
                     class="bg-[#FFAA80] w-full h-[300px] lg:h-[330px] rounded-3xl flex flex-col items-center pt-[42px] hover:bg-[#ffb794]">
                     <img src="/assets/icon/mendengar.png"
                         class="h-[120px] w-[120px] md:h-[140px] md:w-[140px] lg:h-[160px] lg:w-[160px] " alt="">

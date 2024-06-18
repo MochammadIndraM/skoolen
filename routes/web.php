@@ -24,6 +24,9 @@ use App\Http\Controllers\sainsFeatures\LangitController;
 use App\Http\Controllers\sainsFeatures\HabitatController;
 use App\Http\Controllers\sainsFeatures\HewanController;
 use App\Http\Controllers\countingFeatures\LearnClockController;
+use App\Http\Controllers\listeningFeatures\LearnListeningController;
+use App\Http\Controllers\listeningFeatures\LearnListeningController2;
+use App\Http\Controllers\listeningFeatures\LearnListeningController3;
 
 
 
@@ -91,6 +94,9 @@ Route::get('/cuaca/{slug}', [CuacaController::class, 'show'])->name('cuaca.show'
 Route::get('/langit', [LangitController::class, 'index'])->name('langit.index');
 Route::get('/langit/{slug}', [LangitController::class, 'show'])->name('langit.show');
 
+Route::get('/learn-listening', [LearnListeningController::class, 'index'])->name('listeningFeatures');
+Route::get('/learn-listening2', [LearnListeningController2::class, 'index'])->name('listeningFeatures2');
+Route::get('/learn-listening3', [LearnListeningController3::class, 'index'])->name('listeningFeatures3');
 
 Route::get('/tentang-kami', function () {
     return view('page.aboutUs');

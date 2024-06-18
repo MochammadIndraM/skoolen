@@ -13,7 +13,7 @@
         </a>
     </div>
     <div class="detail-video mt-[20px] ">
-        <section class="flex flex-wrap justify-center sm:flex-auto ">
+        <section class="flex flex-wrap justify-center sm:flex-auto pb-20">
             <div
                 class="bg-red-400 flex flex-col items-center mx-[2px]  mt-[10px] w-[80%] h-[300px] rounded-lg sm:w-[45%] lg:w-[30%] lg:h-[300px]">
                 <video class="p-[10px] w-full h-[200px] rounded-md md:p-[5px]"

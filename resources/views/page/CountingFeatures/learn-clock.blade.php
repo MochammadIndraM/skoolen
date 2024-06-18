@@ -48,8 +48,8 @@
         color: #fd9b63;
         cursor: pointer;
         border-radius: 13%;
-        font-size: 2em; 
-        transition: background-color 0.3s ease;   
+        font-size: 2em;
+        transition: background-color 0.3s ease;
     }
     #timeString:hover {
         border: 2px solid white;
@@ -118,7 +118,7 @@
         margin-top: 10px;
     }
     </style>
-    
+
     <div class="background-container" id="background-container"></div>
     <div class="title-container">
         <h2 class="text-2xl text-justify border-b-4 border-red-300 pb-1 px-4 rounded-md" style="display: inline-block">Mari Kita Belajar Jam</h2>

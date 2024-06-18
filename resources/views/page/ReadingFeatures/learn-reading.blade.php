@@ -6,7 +6,7 @@
             Membaca
         </h2>
     </div>
-    <div class="block sm:flex sm:flex-row-reverse sm:pt-[40px]">
+    <div class="block sm:flex sm:flex-row-reverse sm:pt-[40px] pb-5">
         <section
             class="pt-[40px] pb-[20px] flex flex-col items-center justify-center sm:pt-[0px] sm:items-center sm:w-[40%] lg:w-[30%]">
             <div class="img-abjad bg-[#65B741] p-[5px] w-1/2 sm:w-[70%] h-[230px] rounded-md lg:h-[300px]">

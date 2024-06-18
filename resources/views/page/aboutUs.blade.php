@@ -34,7 +34,7 @@
                     <h3 class="text-xl font-semibold text-center">Muhammad Arya Fathorozi</h3>
                 </div>
                 <div class="w-full md:w-1/3 px-4 mb-8">
-                    <img src="{{ asset('assets/team/member3.jpg') }}" alt="Team Member 3"
+                    <img src="{{ asset('assets/img/profile/sabila.jpg') }}" alt="Team Member 3"
                         class="rounded-full h-48 w-48 mx-auto mb-4">
                     <h3 class="text-xl font-semibold text-center">Sabila Risqi Andrian</h3>
                 </div>

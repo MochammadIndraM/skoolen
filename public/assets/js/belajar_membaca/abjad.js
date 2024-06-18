@@ -36,7 +36,7 @@ data_abjad.forEach((div) => {
 
             const synthesis = window.speechSynthesis;
             const utterance = new SpeechSynthesisUtterance(textToSpeak);
-
+            utterance.lang = 'id-ID';
             return synthesis.speak(utterance);
         });
     });

@@ -156,14 +156,14 @@ class AbjadSeeder extends Seeder
             [
                 "huruf" => 'Xx',
                 "img_abjad" => 'abjad-X',
-                "img_des" => '',
-                "deskripsi" => ''
+                "img_des" => 'X_Xylophone',
+                "deskripsi" => 'Xylophone'
             ],
             [
                 "huruf" => 'Yy',
                 "img_abjad" => 'abjad-Y',
-                "img_des" => '',
-                "deskripsi" => ''
+                "img_des" => 'Y_yoyo',
+                "deskripsi" => 'Yoyo'
             ],
             [
                 "huruf" => 'Zz',

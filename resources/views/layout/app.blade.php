@@ -63,7 +63,6 @@
                         <li class="md:mr-6 text-[20px]">
                             <a href="/tentang-kami" class="hover:underline">Tentang Kami</a>
                         </li>
-                        <li class="md:mr-6 text-[20px]"><a href="/contact" class="hover:underline">Kontak</a></li>
                     </ul>
                 </div>
             </div>

@@ -26,7 +26,8 @@
         <img src="assets/background/background_langit.png"
             class="{{ request()->is('langit*') ? 'w-full h-full -z-10 fixed' : 'hidden' }} alt="background langit">
         <img src="{{ asset('assets/img/login-register/bg-login.png') }}"
-            class="{{ request()->is('login*') ? 'w-full h-full -z-10  fixed p-0 m-0' : 'hidden' }} alt="background langit">
+            class="{{ request()->is('login*') ? 'w-full h-full -z-10  fixed p-0 m-0' : 'hidden' }} alt="background
+            langit">
         <header
             class="{{ request()->is('login') ? 'hidden' : 'flex' }} bg-[#FFAA80] z-[10] h-[96px] w-full flex-row items-center justify-between top-0 fixed ">
             <a href="/" class="text-[35px] text-[#FFFF80] pl-[2rem]">SKOOLEN</a>
@@ -42,8 +43,6 @@
                 @else
                     <a href="/"
                         class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[1rem] md:pr-[1.5rem] lg:pr-[2rem]">Belajar</a>
-                    <a href="{{ route('login') }}"
-                        class="text-[25px] md:text-[30px] lg:text-[35px] text-[#FFFF80] pr-[2rem]">Login</a>
                 @endauth
             </div>
         </header>
@@ -52,16 +51,19 @@
         </main>
         <footer class="bg-[#FFAA80] text-[#FFFF80] py-8">
             <div class="container mx-auto flex flex-col md:flex-row justify-between items-center py-5">
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold">SKOOLEN</h3>
-                    <p class="mt-2">Membantu belajar dengan cara yang menyenangkan.</p>
+                <div class="mb-6 md:mb-0 w-1/2">
+                    <h3 class="text-[25px] font-bold  tracking-wider">SKOOLEN</h3>
+                    <p class="mt-2 text-[20px]">Membantu belajar dengan cara yang menyenangkan.</p>
                 </div>
-                <div class="mb-6 md:mb-0">
-                    <h4 class="text-xl font-semibold">Navigasi</h4>
-                    <ul class="mt-2 space-y-2">
-                        <li><a href="/" class="hover:underline">Home</a></li>
-                        <li><a href="/tentang-kami" class="hover:underline">Tentang Kami</a></li>
-                        <li><a href="/contact" class="hover:underline">Kontak</a></li>
+                <div class="mb-6 md:mb-0 w-1/2">
+                    <h4 class="text-2xl font-semibold tracking-wider">Navigasi</h4>
+                    <ul class="mt-2 md:flex md:flex-row items-center">
+                        <li class="md:mr-6 text-[20px]"><a href="/" class="hover:underline">Home</a>
+                        </li>
+                        <li class="md:mr-6 text-[20px]">
+                            <a href="/tentang-kami" class="hover:underline">Tentang Kami</a>
+                        </li>
+                        <li class="md:mr-6 text-[20px]"><a href="/contact" class="hover:underline">Kontak</a></li>
                     </ul>
                 </div>
             </div>
